@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1>Calculadora IMC</h1>
+    <form method="post" action="/">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" name="peso" required>
+        <br>
+        <label for="altura">Altura (m):</label>
+        <input type="number" name="altura" step="0.01" required>
+        <br>
+ <button type="submit">Calcular IMC</button>
+ 
+
+<div>
+        <p>Peso: {{ peso }}</p>
+        <p>Altura: {{ altura }}</p>
+        <p>IMC: {{ imc }}</p>
+        <p>Su imc indica <b>{{ mensaje }}</b></p>
+</div>
+    
+</body>
+</html>
